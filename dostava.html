@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="css/style.css" type="text/css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <link rel="icon" href="images/logo org.png">
+        <script src="js/forma.js"></script>
+        <title>WTT</title>
+    </head>
+<body>
+    <header>
+        <div class="gore">
+            <ul class="main-gore">
+                <li ><a href="pocetna.html">Početna</a></li>
+                <li><a href="onama.html">O nama</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+                <li class="active "><a href="dostava.html">Dostava</a></li>
+                <li id="glogo"><img class="glogoimg" height="55px" src="images/logo beli.png" alt=""></li>
+            </ul>
+        </div>
+    </header>
+        <div class="center">
+            <div class="dostava">
+                <i><h2 id="poruci">Poručivanje</h2></i>
+                <p id="postovani">Poštovani molimo Vas da unesete sve podatke<br>
+                kako biste uspešno poručili. <br>
+                </p>
+                <br>
+            </div>
+            <br>
+            <form name="myForm">
+                Ime i prezime: <input type="text" id="ime" name="ime" placeholder="Ime i prezime"/><br>
+                Broj telefona: <input type="number" id="telefon" name="telefon" placeholder="Broj telefona"/><br>
+                <div id="do">
+                    <img id="dos" src="images/dostava.jpg" height="100px" alt="telefon"/>
+                </div>
+                E-mail: <input type="email" id="mail" name="mail" placeholder="E-Mail"/><br>
+                Adresa: <input type="text" id="adresa" name="adresa" placeholder="Adresa"/><br>
+               
+                <br>
+                Odaberite  vrstu sata (možete odabrati 1 po porudžbini): <br>
+                 <select name="muški" id="birajm">
+                    <option value="Biram muški">Biram muški</option>
+                    <option value="Armani">Armani</option>
+                    <option value="Bering">Bering</option>
+                    <option value="Casio">Casio</option>
+                    <option value="Fossil">Fossil</option>
+                    <option value="Guess">Guess</option>
+                    <option value="Hugo Boss">Hugo Boss</option>
+                    <option value="Superdry">Superdry</option>
+                    <option value="Sector">Sector</option>
+                </select>
+
+                <select name="ženski" id="birajz">
+                    <option value="Biram ženski">Biram ženski</option>
+                    <option value="Armani">Armani</option>
+                    <option value="Bulova">Bulova</option>
+                    <option value="Casio">Casio</option>
+                    <option value="Seiko">Seiko</option>
+                    <option value="Guess">Guess</option>
+                    <option value="Hugo Boss">Hugo Boss</option>
+                    <option value="Superdry">Superdry</option>
+                    <option value="Diesel">Diesel</option>
+                </select>
+
+                <select name="dečiji" id="birajde">
+                    <option value="Biram dečiji">Biram dečiji</option>
+                    <option value="G-SHOCK">G-SHOCK</option>
+                    <option value="Casio">Casio</option>
+                    <option value="Casio Retro">Casio Retro</option>
+                    <option value="Flik Flak">Flik Flak</option>
+                    <option value="Silikon">Silikon</option>
+                </select>
+                 <br>
+                U koliko sati želite da stigne porudžbina:  <input class="vreme" id="vreme" type="time">
+                <br>
+                <input type="reset" value="Poništi odgovor" />
+                <br>
+            </form>
+            <br>
+            <br>
+            <div id="dugmici">
+                <button id="spec">Slogan meseca</button> <div id="spec_">   Quality time, Quality Watches</div> <br>
+                <button onclick="proveri()">Proveri svoje podatke</button> <br>
+                <div id="podaci">
+                    <p id="pime">Ime: </p> <input type="text" id="pimee">
+                    <p id="ptele">Broj telefona: </p> <input type="text" id="ptelee">
+                    <p id="pmejl">E-mail: </p><input type="text" id="pmejle">
+                    <p id="padresa">Adresa: </p><input type="text" id="padresae">
+                    <p id="psat">Poručili ste: </p> <p id="psat"><br></p> <p id="nisiBirao">Niste odabrali sat, molimo Vas odaberite</p>
+                </div>
+                <button onclick="validacija()">Poruči</button>
+            </div>
+            <br>
+            <br>
+        </div>
+ 
+</body> 
+
+</html>
